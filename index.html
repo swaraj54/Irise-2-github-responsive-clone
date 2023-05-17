@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Github</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        #screen {
+            width: 100%;
+            border: 5px solid black;
+        }
+
+        #navbar {
+            width: 100%;
+            margin: auto;
+            border: 5px solid blue;
+            height: 60px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        #nav-left {
+            width: 60%;
+            border: 5px solid purple;
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        #nav-left>div:nth-child(1) {
+            width: 10%;
+            border: 2px solid black;
+        }
+
+        #nav-left>div:nth-child(2) {
+            width: 40%;
+            border: 2px solid black;
+        }
+
+        #nav-left>div:nth-child(3) {
+            width: 40%;
+            border: 2px solid black;
+        }
+
+        #nav-right {
+            width: 13%;
+            border: 5px solid purple;
+        }
+
+
+        #body {
+            width: 100%;
+            margin: auto;
+            border: 5px solid red;
+            height: 500px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="screen">
+        <div id="navbar">
+            <div id="nav-left">
+                <div>Icon</div>
+                <div>Search</div>
+                <div>Menu</div>
+            </div>
+            <div id="nav-right">Right</div>
+        </div>
+        <div id="body">Body</div>
+    </div>
+</body>
+
+</html>
