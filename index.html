@@ -22,7 +22,7 @@
         #navbar {
             width: 100%;
             margin: auto;
-            border: 5px solid blue;
+            /* border: 5px solid blue; */
             height: 60px;
             display: flex;
             justify-content: space-between;
@@ -113,11 +113,71 @@
             margin: auto;
             /* border: 5px solid red; */
             height: 500px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        #body>div:nth-child(1) {
+            width: 20%;
+            border: 1px solid black;
+        }
+
+        #body>div:nth-child(2) {
+            width: 47%;
+            border: 1px solid black;
+        }
+
+        #body>div:nth-child(3) {
+            width: 27%;
+            border: 1px solid black;
+        }
+
+        #bars {
+
+            display: none;
+        }
+
+        #body>div:nth-child(1)>div:nth-child(1) {
+            width: 90%;
+            margin: auto;
+            /* border: 1px solid blue; */
+            height: 100%;
         }
 
         @media screen and (max-width : 416px) {
+            #screen {
+                width: 100%;
+            }
+
             #navbar {
-                border: 5px solid red;
+                margin: auto;
+                /* border: 1px solid red; */
+                display: flex;
+                justify-content: space-around;
+                width: 100%;
+            }
+
+            #navbar>div:nth-child(1) {
+                width: 1%;
+                padding-left: 0;
+            }
+
+            #navbar>div:nth-child(2)>div>img {
+                padding-left: 0;
+                margin-left: -10px;
+                /* border: 1px solid white; */
+            }
+
+            #bars {
+                display: block;
+                /* border: 1px solid red; */
+                padding: 17px;
+            }
+
+            #navbar>div:nth-child(3) {
+                /* border: 2px solid red; */
+                margin-right: 0px;
+                padding-top: 15px;
             }
 
             .hide {
@@ -127,6 +187,57 @@
             #nav-left>div:nth-child(3) {
                 display: none;
             }
+
+            #nav-right>div:nth-child(2) {
+                display: none;
+            }
+
+            #nav-right>div:nth-child(3) {
+                display: none;
+            }
+
+            #nav-left>div:nth-child(1)>img {
+                /* border: 1px solid red; */
+                width: 45px;
+                height: 45px;
+                margin-top: 5px;
+            }
+
+            #nav-right>div:nth-child(1) {
+                /* border: 1px solid white; */
+                margin-left: 10px;
+
+            }
+
+            #body {
+                flex-direction: column;
+                /* width: 400px; */
+                border: 1px solid green;
+            }
+
+            #body>div:nth-child(1) {
+                height: 200px;
+                width: 100%;
+            }
+
+            #body>div:nth-child(1)>div {
+                width: 90%;
+                margin: auto;
+                border: 1px solid green;
+            }
+
+            #body>div:nth-child(2) {
+                height: 200px;
+                width: 90%;
+                border: 1px solid blue;
+                margin: auto;
+            }
+
+            #body>div:nth-child(3) {
+                height: 200px;
+                width: 100%;
+                display: none;
+            }
         }
     </style>
 </head>
@@ -134,6 +245,9 @@
 <body>
     <div id="screen">
         <div id="navbar">
+            <div id="bars">
+                <i class="fa-solid fa-bars fa-xl"></i>
+            </div>
             <div id="nav-left">
                 <div>
                     <img src="https://miro.medium.com/v2/resize:fit:1200/1*M7SXFpGPe9cVEZ6bxZDAgA.png" alt="Logo" />
@@ -163,7 +277,17 @@
                 <div><i class="fa-regular fa-user fa-lg"></i></div>
             </div>
         </div>
-        <div id="body">Body</div>
+        <div id="body">
+            <div>
+                <div>Left</div>
+            </div>
+            <div>
+                <div>Center</div>
+            </div>
+            <div>
+                <div>Right</div>
+            </div>
+        </div>
     </div>
 </body>
 
